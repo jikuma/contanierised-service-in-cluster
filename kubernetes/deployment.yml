@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta2
+kind: Deployment
+metadata:
+  name: sample-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sample-flask-service
+    spec:
+      containers:
+      - name: sample-flask-service
+        image: jikuma/simple-service:1
+        ports:
+        - containerPort: 5000
