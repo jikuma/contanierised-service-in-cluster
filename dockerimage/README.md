@@ -2,11 +2,15 @@
 
 ## Build an image
 
-docker build -t jikuma/simple-service .
+docker build -t jikuma/simple-service:1 .
 
 ## Run an image
 
-docker run -p 5000:5000 jikuma/simple-service
+docker run -p 5000:5000 jikuma/simple-service:1
+
+## Push an image
+
+docker push jikuma/simple-service:1
 
 ## Check if service is running
 
