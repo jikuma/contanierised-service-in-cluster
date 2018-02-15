@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: jikuma/simple-service
-  tag: 1
+  tag: 4
   pullPolicy: IfNotPresent
 
 service:
