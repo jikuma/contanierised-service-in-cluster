@@ -6,7 +6,7 @@ docker build -t jikuma/simple-service:1 .
 
 ## Run an image
 
-docker run -p 5000:5000 jikuma/simple-service:1
+docker run -p 5000:5000  -e SERVICE_REVISION=1 jikuma/simple-service:1
 
 ## Push an image
 
